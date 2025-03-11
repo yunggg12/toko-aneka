@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Toko Baju</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #696969;
+        }
+
+        header {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background-color: #FFFFF;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .produk-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+
+        .produk {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 30%;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .produk img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .produk h3 {
+            margin: 15px 0;
+        }
+
+        .produk p {
+            color: #555;
+        }
+
+        .produk button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .produk button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 40px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .produk {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .produk {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Selamat Datang di Toko Aneka Ragam</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Produk</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Temukan Yang Anda cari Disini </h2>
+        <p>Berbagai pilihan  dengan desain stylish dan bahan berkualitas.</p>
+    </div>
+
+    <div class="container">
+        <section class="produk-section">
+            <!-- Produk 1 -->
+            <div class="produk">
+                <img src="https://i.postimg.cc/13R4Q9wY/photo-2025-03-10-11-05-36.jpg"
+alt="Produk 1">
+                <h3>Headset Kerja Terbaik</h3>
+                <p>Headset kerja putih,  nyaman dan cocok untuk sehari-hari.</p>
+                <button onclick="tambahKeKeranjang('Baju Kaos Polos')">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Produk 2 -->
+            <div class="produk">
+                <img src="https://i.postimg.cc/D02c9x3X/Screenshot-2025-03-10-172251.png" alt="Produk 2">
+                <h3>Jersey Bola Kualitas Terbaik</h3>
+                <p>Jersey lengan pendek dengan desain modern untuk tampilan lebih rapi.</p>
+                <button onclick="tambahKeKeranjang('Baju Kemeja Lengan Pendek')">Tambah ke Keranjang</button>
+            </div>
+
+                  </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Toko Aneka Kami. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script>
+        // Fungsi untuk menambahkan produk ke keranjang
+        function tambahKeKeranjang(namaProduk) {
+            alert(namaProduk + " telah ditambahkan ke keranjang!");
+        }
+    </script>
+
+</body>
+
+</html>
